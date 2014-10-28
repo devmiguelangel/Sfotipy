@@ -1,7 +1,6 @@
 package com.mgm.sfotipy.adapters;
 
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,8 +51,8 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsAdapter.ViewHold
         public ViewHolder(View itemView) {
             super(itemView);
 
-            nombreFriend = (TextView) itemView.findViewById(R.id.nombre_friend);
-            twitterFriend = (TextView) itemView.findViewById(R.id.twitter_friend);
+            nombreFriend = (TextView) itemView.findViewById(R.id.nombre_song);
+            twitterFriend = (TextView) itemView.findViewById(R.id.artist_song);
             ultimaCancion = (TextView) itemView.findViewById(R.id.ultimacancion_friend);
         }
     }

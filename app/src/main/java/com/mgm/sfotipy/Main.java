@@ -10,6 +10,11 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
+import com.parse.ParseInstallation;
+import com.parse.PushService;;
+
 
 public class Main extends Activity {
 
@@ -17,6 +22,9 @@ public class Main extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Parse.initialize(this, "ADnPAu0VZC7nDcMuyv4at5iYqeAIkkkPkB1vHx95", "ApxTgFDq2tgkJVcvGbJ2F2tCFYvmtDxn1eNmWsKK");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
         int size = getResources().getDimensionPixelSize(R.dimen.fab_size);
 

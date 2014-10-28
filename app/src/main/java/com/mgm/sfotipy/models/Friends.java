@@ -5,6 +5,8 @@ package com.mgm.sfotipy.models;
  */
 public class Friends {
     private String nombre;
+    private String twitter;
+    private String ultimaCancion;
 
     public String getNombre() {
         return nombre;
@@ -30,6 +32,5 @@ public class Friends {
         this.ultimaCancion = ultimaCancion;
     }
 
-    private String twitter;
-    private String ultimaCancion;
+
 }

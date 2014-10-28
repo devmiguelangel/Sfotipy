@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/welcome_text"
-        android:id="@+id/nombre_friend"
+        android:id="@+id/nombre_song"
         android:layout_below="@+id/imageView"
         android:textSize="18dp"
         android:textColor="@color/text_color"
@@ -33,7 +33,7 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/nombre_friend"
+        android:layout_below="@+id/nombre_song"
         android:layout_centerHorizontal="true" >
 
         <TextView
